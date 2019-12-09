@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Test</title>
+        <link href="css/main.css" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="hero-image" id="div1">
+        <div id="smallHeader">
+          <span>
+            <a class="nav-link" href="/Home/Account" style="color: white">CREATE ACCOUNT</a>
+            *
+            <a class="nav-link" href="/Home/Login" style="color: white">LOGIN</a>
+          </span>
+        </div>
+      
+        <div class="header" id="myHeader">
+          <ul style="padding-left: 300px">
+            <li><a class="nav-link" href="/Home/Index" style="padding: 0%"><img src="images/Guild-Logo2.gif" style="width:200px; height:70px; padding-right:1%; padding-left:20%;"></a></li>
+            <li><a class="nav-link" href="/Home/Index">FIND A HOME</a></li>
+            <li><a class="nav-link" href="/Home/Agent">FIND AN AGENT</a></li>
+            <li><a class="nav-link" href="/Home/Careers">CAREERS</a></li>
+            <li><a class="nav-link" href="/Home/ContactUs">CONTACT US</a></li>
+            <li style="color: #2084bd;font-size: 25px; float: left; padding: 22px 16px;"> | </li>
+            <li style="color: #2084bd;font-size: 25px; float: left; padding: 22px 16px;"><b>(555) 555-5555</b></li>
+          </ul>
+        </div>
+        <h3 style="font-size: 50px;text-align:center;color: white;text-shadow: 2px 2px black; padding-top: 10%">FIND YOUR LAS VEGAS HOME</h3>
+        <div id="firstDiv">
+          <form id="searchForm">
+            <div>
+              <input type="text" id="searchTerm" size="45" placeholder="Enter a City & State, Subdivision, or MLS#">
+              <select id="propType">
+                <option value="" disabled selected>Property Type</option>
+              </select>
+            </div>
+            <div>
+              <select id="minPrice">
+                <option value="" disabled selected>Minimum Price</option>
+              </select>
+              <select id="maxPrice">
+                <option value="" disabled selected>Maximum Price</option>
+              </select>
+              <select id="beds">
+                <option value="" disabled selected>Beds</option>
+              </select>
+              <select id="beds">
+                <option value="" disabled selected>Baths</option>
+              </select>
+              <button onclick="Search()" id="btnSearch" class="btn btn-primary">Search Homes</button>
+            </div>
+          </form>
+          <div>
+            <img src="images/AdvancedSearch.png" style="width:200px; height:150px; padding-right:1%; padding-top: 25px;">
+            <img src="images/AgentSearch.png" style="width:200px; height:150px; padding-right:1%; padding-top: 25px;">
+            <img src="images/OpenHouse.png" style="width:200px; height:150px; padding-right:1%; padding-top: 25px;">
+          </div>
+        </div>
+
+        <div class="hero-image" id="div2">
+            <div class="col-md-12" style="align-content: center;">
+              <div style="padding-top: 15%"></div>
+              <h1 id="featuredHomesHeader" style="margin-top: 0; margin-bottom: 0;">FEATURED LAS VEGAS AREA
+                HOMES</h1>
+              <div class="col-xs-12 col-sm-6 col-md-4" id="areaHomes">
+                <img src="images/Home1.jpg" style="width:250px; height:170px;">
+                <p id="city">Henderson, NV</p>
+                <p id="price">$1,999,500</p>
+                <p id="info">4 Bedrooms * 4.1 Bathrooms</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4" id="areaHomes">
+                <img src="images/Home2.jpg" style="width:250px; height:170px;">
+                <p id="city">Las Vegas, NV</p>
+                <p id="price">$919,900</p>
+                <p id="info">3 Bedrooms * 2.1 Bathrooms</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4" id="areaHomes">
+                <img src="images/Home3.jpg" style="width:250px; height:170px;">
+                <p id="city">Las Vegas, NV</p>
+                <p id="price">$730,000</p>
+                <p id="info">5 Bedrooms * 4 Bathrooms</p>
+              </div>
+            </div>
+        </div>
+      
+        <div class="hero-image" id="div3">
+            <div class="col-md-12">
+                <div style="padding-top: 10%"></div>
+                <h1 id="familyServicesHeader" style="margin-top: 0; margin-bottom: 0;">Explore our Family of Services</h1>
+                <div class="col-xs-12 col-sm-6 col-md-4" id="familyServicesDiv">
+                  <img src="images/BuyAHome.jpg" id="familyServicesImage">
+                  <p id="familyServicesTitles">Buy a Home</p>
+                  <p id="infoFamilyServicesDiv">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+                  <p style="margin: 0;"><input type="image" src="images/SearchHomesBtn.jpg" id="homesSearchBtn" style="width: 100%; height: 100%;"></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4" id="familyServicesDiv">
+                    <img src="images/SellAHome.jpg" id="familyServicesImage">
+                    <p id="familyServicesTitles">Sell a Home</p>
+                    <p id="infoFamilyServicesDiv">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+                    <p style="margin: 0;"><input type="image" src="images/HomeWorthBtn.jpg" id="homesSearchBtn" style="width: 100%; height: 100%;"></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4" id="familyServicesDiv">
+                    <img src="images/Relocate.jpg" id="familyServicesImage">
+                    <p id="familyServicesTitles">Relocation</p>
+                    <p id="infoFamilyServicesDiv">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.</p>
+                    <p style="margin: 0;"><input type="image" src="images/ReloTeamBtn.jpg" id="homesSearchBtn" style="width: 100%; height: 100%;"></p>
+                </div>
+              </div>
+        </div>
+      
+        <div class="hero-image" id="div4">
+          <div class="col-md-12">
+            <div style="padding-top: 10%">
+              <div id="contactUsDiv">
+                <h3 style=" color: white; font-size: 25px; text-align: left;">Get in Touch With Us</h3>
+                <form id="contactUsForm">
+                  <div>
+                    <input type="text" id="contactUs" size="45" placeholder="First and Last Name">
+                  </div>
+                  <p></p>
+                  <div>
+                    <input type="text" id="contactUs" size="45" placeholder="Email Address">
+                  </div>
+                  <p></p>
+                  <div>
+                    <textarea id="contactUs" size="45" placeholder="Comments">
+                                  </textarea>
+                  </div>
+                  <p style="margin: 0;"><input type="image" src="images/ContactUsBtn.jpg" id="contactUsBtn" style="width: 100%; height: 100%;"></p>
+                </form>
+              </div>
+              <div id="contactUsDiv" style="width: 50%; text-align: left;">
+                  <h3 style=" color: white; font-size: 25px; text-align: left;">Read Our Blog</h3>
+                  <p style="color: #86cef9; font-size: 20px;">First Blog Title Should Go in This Location</p>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec...</p>
+                  <p style="color: #86cef9; font-size: 20px;">First Blog Title Should Go in This Location</p>
+                  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec...</p>
+                  <h3 style=" color: white; font-size: 21px; text-align: left;">Meet Our Partners</h3>
+                  <img src="images/Guild.png" style="width: 100px; height: 50px;">
+                  <img src="images/LeadingCo.png" style="width: 100px; height: 50px;">
+                  <img src="images/Luxury.png" style="width: 100px; height: 50px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image" id="div5">
+            <div class="col-md-12">
+                <div id="contactUsDiv" style="padding-top: 2%; text-align: right; margin-right: 20%;">
+                  <p>ONLINE HOMES MAGAZINE &nbsp; | &nbsp; CONTACT US &nbsp; | &nbsp; 800-966-7669</p>
+                </div>
+                <div id="contactUsDiv" style="text-align: right;">
+                  <img src="images/Facebook.jpg" style="width: 25px; height: 25px;">
+                  <img src="images/YouTube.jpg" style="width: 25px; height: 25px;">
+                  <img src="images/Twitter.jpg" style="width: 25px; height: 25px;">
+                  <img src="images/Rss.jpg" style="width: 25px; height: 25px;">
+                  <img src="images/GooglePlus.jpg" style="width: 25px; height: 25px;">
+                </div>
+                <hr width="55%" />
+                <div style="float: left; padding-left: 23%">
+                    <img src="images/Footer1.png" style="width: 30px; height: 30px;">
+                    <img src="images/Footer2.png" style="width: 30px; height: 30px;">
+                </div>
+                <div>
+                  <p style="text-align: left; padding-left: 28%; font-size: 15px; color: #86cef9">Terms of Use and Privacy Policy |
+                    Agent Login</p>
+                  <p style="text-align: left; padding-left: 28%; font-size: 15px; color: lightgray">This site is hosted, designed, and copyright &copy;
+                    1994 - 2012 by Delta Media Group, Inc.</p>
+                </div>
+                </div>
+          </div>
+        </div>
+      </div>
+        <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+    </body>
+</html>

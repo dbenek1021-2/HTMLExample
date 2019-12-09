@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+a {
+  color: black;
+  padding: 15px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 28px;
+  text-decoration: none;
+}
+
+  .top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .header {
+    padding: 8px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 70px;
+  }
+
+  #smallHeader {
+    padding: 3px 300px;
+    background: black;
+    color: lightgray;
+    text-align: right;
+  }
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+#firstDiv {
+  align-content: center;
+  height: 650px;
+  width: auto;
+}
+
+  #div1 {
+    background-image: url('../images/First.jpg');
+    background-position: center, center;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #searchForm {
+    background-color: black;
+    display: inline-block;
+    width: 40%;
+    height: 120px;
+    padding-top: 10px;
+  }
+
+  #searchTerm {
+    padding: 10px 50px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=text], select {
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #div2 {
+    background-image: url('../images/Second.jpg');
+    height: 1000px;
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #featuredHomesHeader {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    font-size: 40px;
+    text-align:center;
+    color: #2084bd;
+    background-color: white;
+    width: 1076px;
+    margin: 0 auto;
+  }
+
+ #areaHomes {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    padding-top: 2%;
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    margin-right: -4px;
+ }
+
+ #city {
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+  width: 250px;
+  font-size: 25px;
+  position: relative;
+  top: -20px;
+ }
+
+ #price {
+  color: #2084bd;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+ }
+
+ #info {
+  color: #2084bd;
+  font-size: 20px;
+  font-weight: bold;
+ }
+
+  #div3 {
+    background-color: #f2f2f2;
+    height: 1000px;
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #familyServicesHeader {
+    font-size: 40px;
+    text-align:center;
+    color: #2084bd;
+    width: 1076px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  #familyServicesImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  #familyServicesDiv {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    background-color: white;
+    margin-right: 10px;
+    box-shadow: 1px 1px 10px lightgray;
+ }
+
+ #familyServicesTitles {
+  color: #2084bd;
+  font-size: 25px;
+  text-align: left;
+  margin: 0;
+  padding-left: 4%;
+  padding-top: 4%;
+ }
+
+ #infoFamilyServicesDiv {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 4%;
+ }
+
+  #div4 {
+    background-color: #2084bd;
+    height: 1000px;
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: normal;
+  }
+
+  #contactUsDiv {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+   }
+
+   #contactUsForm {
+    background-color: #023d6d;
+    padding: 8%;
+   }
+
+   #contactUs {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   }
+
+   #div5 {
+    background-color: #023d6d;
+    color: white;
+    height: 200px;
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: normal;
+  }
+
+  hr {
+    border-color: #6ebbe7;
+  }
